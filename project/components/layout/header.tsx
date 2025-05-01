@@ -36,18 +36,18 @@ export function Header() {
   };
 
   return (
-    <header 
+    <header
       className={cn(
         'fixed top-0 w-full z-50 transition-all duration-300',
-        scrolled 
-          ? 'bg-background/90 backdrop-blur-md border-b shadow-sm' 
+        scrolled
+          ? 'bg-background/90 backdrop-blur-md border-b shadow-sm'
           : 'bg-transparent'
       )}
     >
       <div className="container mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center space-x-2 text-primary font-bold text-xl"
           >
             <Code className="h-6 w-6" />
@@ -62,8 +62,8 @@ export function Header() {
                 href={item.href}
                 className={cn(
                   'text-sm font-medium transition-colors hover:text-primary',
-                  isActive(item.href) 
-                    ? 'text-primary' 
+                  isActive(item.href)
+                    ? 'text-primary'
                     : 'text-muted-foreground'
                 )}
               >
@@ -103,8 +103,8 @@ export function Header() {
                   href={item.href}
                   className={cn(
                     'text-sm font-medium transition-colors hover:text-primary p-2 rounded-md',
-                    isActive(item.href) 
-                      ? 'text-primary bg-accent' 
+                    isActive(item.href)
+                      ? 'text-primary bg-accent'
                       : 'text-muted-foreground'
                   )}
                   onClick={() => setMobileMenuOpen(false)}
