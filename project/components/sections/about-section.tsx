@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { GraduationCap, Briefcase, Award, Heart, Code, Lightbulb, Database, Brain, Cloud } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
